@@ -13,7 +13,12 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 14.x
-      - run: npm install -g npm-force-resolutions
-      - run: npm install
-      - run: npm test
-      - run: npm run build
+      - name: Install Dependencies
+        run: |
+          npm install -g npm-force-resolutions
+          npm-force-resolutions
+          npm install
+      - name: Test Project
+        run: npm test
+      - name: Compile Project
+        run: npm run build
