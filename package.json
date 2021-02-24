@@ -1,8 +1,8 @@
 {
-  "name": "lofinerdfighters",
+  "name": "lofinerdfighters.com",
   "version": "1.0.0",
   "private": true,
-  "description": "lofinerdfighters",
+  "description": "Code for lofinerdfighters.com",
   "author": "Joshua Hoeflich",
   "keywords": [
     "gatsby"
