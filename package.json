@@ -1,1 +1,44 @@
-{"name":"lofinerdfighters","version":"1.0.0","private":true,"description":"lofinerdfighters","author":"Joshua Hoeflich","keywords":["gatsby"],"scripts":{"develop":"gatsby develop","start":"gatsby develop","build":"gatsby build","serve":"gatsby serve","clean":"gatsby clean"},"dependencies":{"@emotion/react":"^11.1.5","@emotion/styled":"^11.1.5","gatsby":"^2.32.3","gatsby-image":"^2.11.0","gatsby-plugin-emotion":"^5.4.0","gatsby-plugin-manifest":"^2.12.1","gatsby-plugin-offline":"^3.10.2","gatsby-plugin-react-helmet":"^3.10.0","gatsby-plugin-sharp":"^2.14.2","gatsby-plugin-sitemap":"^2.12.0","gatsby-source-filesystem":"^2.11.1","gatsby-transformer-sharp":"^2.12.0","react":"^16.13.1","react-dom":"^16.13.1","react-helmet":"^6.1.0"}}
+{
+  "name": "lofinerdfighters",
+  "version": "1.0.0",
+  "private": true,
+  "description": "lofinerdfighters",
+  "author": "Joshua Hoeflich",
+  "keywords": [
+    "gatsby"
+  ],
+  "overrides": {
+    "socket.io": "^3.1.1"
+  },
+  "scripts": {
+    "preinstall": "node bin/fix-package-lock.js",
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "pretty-quick": "pretty-quick --staged",
+    "postinstall": "husky install"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^11.1.5",
+    "gatsby": "^2.32.3",
+    "gatsby-image": "^2.11.0",
+    "gatsby-plugin-emotion": "^5.4.0",
+    "gatsby-plugin-manifest": "^2.12.1",
+    "gatsby-plugin-offline": "^3.10.2",
+    "gatsby-plugin-react-helmet": "^3.10.0",
+    "gatsby-plugin-sharp": "^2.14.2",
+    "gatsby-plugin-sitemap": "^2.12.0",
+    "gatsby-source-filesystem": "^2.11.1",
+    "gatsby-transformer-sharp": "^2.12.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "husky": "^5.1.1",
+    "pretty-quick": "^3.1.0"
+  }
+}
