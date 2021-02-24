@@ -15,7 +15,7 @@
     "extends": "react-app"
   },
   "scripts": {
-    "preinstall": "npx npm-force-resolutions",
+    "preinstall": "if [ \"$CI\" == true ]; then npm-force-resolutions; else npx npm-force-resolutions; fi",
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
