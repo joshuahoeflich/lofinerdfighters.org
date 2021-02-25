@@ -1,2 +1,2 @@
-import "@fontsource/rosario";
+import "@fontsource/indie-flower";
 import "@fontsource/roboto";

@@ -1,6 +1,6 @@
 import React from "react";
 import Seo from "../components/SEO";
-import { Flex, Fade, Text } from "@chakra-ui/react";
+import { Flex, Fade, Heading } from "@chakra-ui/react";
 
 const HomePage: React.FC = () => {
   return (
@@ -11,10 +11,11 @@ const HomePage: React.FC = () => {
           width="100%"
           height="100%"
           flexDirection="column"
-          padding="16px"
           alignItems="center"
         >
-          <Text>lo-fi nerdfighters</Text>
+          <Flex width="100%" p="16px" bg="orange.800" justifyContent="center">
+            <Heading color="white">lo-fi nerdfighters</Heading>
+          </Flex>
         </Flex>
       </Fade>
     </>
