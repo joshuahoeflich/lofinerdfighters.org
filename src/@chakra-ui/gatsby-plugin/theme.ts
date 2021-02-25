@@ -10,7 +10,7 @@ const config = {
   },
   fonts: {
     heading: "Indie Flower",
-    body: "Roboto",
+    body: "Indie Flower",
   },
 };
 

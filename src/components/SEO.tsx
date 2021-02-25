@@ -16,7 +16,7 @@ const SEO: React.FC<SEOProps> = (props) => {
 };
 
 SEO.defaultProps = {
-  title: "lo-fi nerdfighters",
+  title: "lo-fi nerdfighter art",
   description: "Lofi Nerdfighter Art.",
 };
 
