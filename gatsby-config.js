@@ -9,6 +9,7 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-offline",
+    "@chakra-ui/gatsby-plugin",
     {
       resolve: "gatsby-plugin-manifest",
       options: {

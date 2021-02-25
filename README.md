@@ -10,3 +10,7 @@ You will need to have `node 14` and `npm 6.14.11` installed. Then, simply clone 
 - Run `npm test:watch` to run the tests in watch mode in the background.
 
 I like to open up two terminals running those commands, but your workflow may vary.
+
+### Sources
+
+- Favicon taken from this sock picture on Twitter: https://twitter.com/romanmars/status/1332470398219296768/photo/1
