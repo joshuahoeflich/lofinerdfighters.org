@@ -1,28 +1,46 @@
 import React from "react";
 import { css } from "linaria";
-/* import PlayButton from "./PlayButton"; */
+import PlayButton from "./PlayButton";
 
 const container = css`
   display: flex;
-  position: fixed;
+  position: sticky;
+  top: 0;
   z-index: 2;
-  width: 100%;
-  padding: 16px;
-  background-color: #7B341E
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #7b341e;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+`;
+
+const contentContainer = css`
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
 `;
 
 const header = css`
+  text-align: center;
   color: white;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-right: 32px;
+  @media only screen and (max-width: 450px) {
+    font-size: 20pt;
+  }
+  @media only screen and (max-width: 350px) {
+    font-size: 14pt;
+  }
 `;
 
 const Header = () => {
   return (
     <div className={container}>
-      <h1 className={header}>lo-fi nerdfighter art</h1>
+      <div className={contentContainer}>
+        <h1 className={header}>lo-fi nerdfighter art</h1>
+        <PlayButton />
+      </div>
     </div>
   );
 };

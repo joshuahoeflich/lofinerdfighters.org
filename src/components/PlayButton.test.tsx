@@ -1,6 +1,9 @@
 import React from "react";
 import { render, fireEvent } from "@testing-library/react";
 import { PlayControls } from "./PlayButton";
+jest.mock("linaria", () => ({
+  css: () => "class-hash",
+}));
 
 describe("Our play button", () => {
   test("Says play when nothing is playing", () => {
