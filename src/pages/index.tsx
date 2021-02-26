@@ -1,7 +1,13 @@
 import React from "react";
+import Header from "../components/Header";
 
 const HomePage = () => {
-  return <h1>Hello!</h1>;
+  return (
+    <>
+      <Header />
+      <h1>Hello!</h1>
+    </>
+  );
 };
 
 /* import Seo from "../components/SEO"; */

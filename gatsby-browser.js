@@ -1,2 +1,3 @@
 import "@fontsource/indie-flower";
-import "@fontsource/roboto";
+import "normalize.css";
+import "./globals.css";

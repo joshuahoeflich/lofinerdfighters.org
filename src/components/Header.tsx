@@ -1,23 +1,29 @@
 import React from "react";
-import { Flex, Heading } from "@chakra-ui/react";
-import PlayButton from "./PlayButton";
+import { css } from "linaria";
+/* import PlayButton from "./PlayButton"; */
+
+const container = css`
+  display: flex;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 16px;
+  background-color: #7B341E
+  justify-content: center;
+  align-items: center;
+`;
+
+const header = css`
+  color: white;
+  padding-left: 60px;
+  padding-right: 60px;
+`;
 
 const Header = () => {
   return (
-    <Flex
-      position="fixed"
-      zIndex="2"
-      width="100%"
-      p="16px"
-      bg="orange.800"
-      justifyContent="center"
-      alignItems="center"
-    >
-      <Heading color="white" px="60px">
-        lo-fi nerdfighter art
-      </Heading>
-      <PlayButton />
-    </Flex>
+    <div className={container}>
+      <h1 className={header}>lo-fi nerdfighter art</h1>
+    </div>
   );
 };
 
