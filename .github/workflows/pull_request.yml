@@ -20,5 +20,7 @@ jobs:
           npm install
       - name: Test Project
         run: npm test
+      - name: Typecheck Project
+        run: npm run typecheck
       - name: Compile Project
         run: npm run build
