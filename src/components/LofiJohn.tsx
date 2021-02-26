@@ -3,24 +3,12 @@ import { css } from "linaria";
 // @ts-ignore
 import John from "../images/john.gif";
 
-const imageDescripton = css`
+export const imageDescripton = css`
   font-size: 36px;
   text-align: center;
 `;
 
-const lofiContainer = css`
-  display: flex;
-  flex-direction: column;
-  padding: 48px;
-`;
-
-const gifContainer = css`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
-const gif = css`
+export const gif = css`
   width: 700px;
   @media only screen and (max-width: 1000px) {
     width: 700px;
