@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Box, Text } from "@chakra-ui/react";
+import Picture from "./Picture";
 import { graphql, useStaticQuery } from "gatsby";
 import Image from "gatsby-image";
 
@@ -22,14 +22,12 @@ const FrenchTheLlama: React.FC = () => {
     },
   } = useStaticQuery(query);
   return (
-    <a href="https://drawception.com/game/SkHh1NK4z1/french-the-llama/">
-      <Flex p="48px" flexDirection="column" alignItems="center">
-        <Box width={["128px", "300px", "300px", "300px"]}>
-          <Image fluid={fluid} />
-        </Box>
-        <Text fontSize="36px">french the llama</Text>
-      </Flex>
-    </a>
+    <Picture
+      description="french the llama"
+      link="https://drawception.com/game/SkHh1NK4z1/french-the-llama/"
+    >
+      <Image fluid={fluid} />
+    </Picture>
   );
 };
 

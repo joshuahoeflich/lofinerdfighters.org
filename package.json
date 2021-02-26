@@ -17,6 +17,7 @@
   "scripts": {
     "preinstall": "npx npm-force-resolutions",
     "develop": "gatsby develop",
+    "develop:mobile": "gatsby develop -o -H 0.0.0.0 -p 8000",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",

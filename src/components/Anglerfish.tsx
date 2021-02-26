@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Box, Text } from "@chakra-ui/react";
+import Picture from "./Picture";
 import { graphql, useStaticQuery } from "gatsby";
 import Image from "gatsby-image";
 
@@ -22,17 +22,12 @@ const Anglerfish: React.FC = () => {
     },
   } = useStaticQuery(query);
   return (
-    <a href="https://www.pinterest.com/pin/55732114110729372/">
-      <Flex p="48px" flexDirection="column" alignItems="center">
-        <Box
-          height={["128px", "300px", "300px", "300px"]}
-          width={["128px", "300px", "300px", "300px"]}
-        >
-          <Image fluid={fluid} />
-        </Box>
-        <Text fontSize="36px">anglerfish</Text>
-      </Flex>
-    </a>
+    <Picture
+      link="https://www.pinterest.com/pin/55732114110729372/"
+      description="anglerfish"
+    >
+      <Image fluid={fluid} />
+    </Picture>
   );
 };
 

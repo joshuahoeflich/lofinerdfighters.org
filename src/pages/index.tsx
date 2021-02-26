@@ -1,10 +1,20 @@
 import React from "react";
 import Layout from "../components/Layout";
+import Anglerfish from "../components/Anglerfish";
+import Circles from "../components/Circles";
+import FrenchTheLlama from "../components/FrenchTheLlama";
+import Infinity from "../components/Infinity";
+import PizzaJohn from "../components/PizzaJohn";
+import LofiJohn from "../components/LofiJohn";
 
 const HomePage = () => {
   return (
     <Layout>
-      <h1>Hello!</h1>
+      <Anglerfish />
+      <FrenchTheLlama />
+      <Circles />
+      <Infinity />
+      <PizzaJohn />
     </Layout>
   );
 };

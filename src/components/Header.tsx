@@ -13,6 +13,7 @@ const container = css`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  width: 100%;
 `;
 
 const contentContainer = css`
