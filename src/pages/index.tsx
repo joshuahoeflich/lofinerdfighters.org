@@ -10,6 +10,7 @@ import LofiJohn from "../components/LofiJohn";
 const HomePage = () => {
   return (
     <Layout>
+      <LofiJohn />
       <Anglerfish />
       <FrenchTheLlama />
       <Circles />

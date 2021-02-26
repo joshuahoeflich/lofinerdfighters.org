@@ -5,6 +5,7 @@ import John from "../images/john.gif";
 
 const imageDescripton = css`
   font-size: 36px;
+  text-align: center;
 `;
 
 const lofiContainer = css`
@@ -20,6 +21,7 @@ const gifContainer = css`
 `;
 
 const gif = css`
+  width: 700px;
   @media only screen and (max-width: 1000px) {
     width: 700px;
   }
@@ -36,14 +38,10 @@ const gif = css`
 
 const LofiJohn: React.FC = () => {
   return (
-    <div className={lofiContainer}>
-      <a href="https://www.reddit.com/r/nerdfighters/comments/laqtwq/lofi_john/">
-        <div className={gifContainer}>
-          <img className={gif} src={John} alt="John signing his name." />
-          <p className={imageDescripton}>lo-fi john</p>
-        </div>
-      </a>
-    </div>
+    <a href="https://www.reddit.com/r/nerdfighters/comments/laqtwq/lofi_john/">
+      <img src={John} className={gif} alt="John signing his name." />
+      <p className={imageDescripton}>lo-fi john</p>
+    </a>
   );
 };
 
